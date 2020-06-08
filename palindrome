@@ -1,0 +1,16 @@
+
+import java.util.Scanner;
+class Palindrome{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the String To Check The Palindrome = ");
+		String name=sc.nextLine();
+		StringBuffer sb=new StringBuffer(name);
+		sb.reverse();
+		if(sb.equals(name)){
+			System.out.print(name+" = Is  Not Palindrome");
+		}else{
+			System.out.print(name+" = Is Palindrome");
+		}
+	}
+}
